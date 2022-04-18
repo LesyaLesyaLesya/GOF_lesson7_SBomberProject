@@ -39,6 +39,7 @@ namespace MyTools {
 
     void SetColor(ConsoleColor color);
 
+   
 	//=============================================================================================
 
     class ILogger {

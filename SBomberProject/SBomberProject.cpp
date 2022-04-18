@@ -2,20 +2,22 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <memory>
-
-#include "SBomber.h"
+#include "SBomber.h"                                                   
 #include "MyTools.h"
+
 
 using namespace std;
 
 //========================================================================================================================
+auto logger = std::make_shared<MyTools::ProxyLogger>(MyTools::FileLoggerSingleton::getInstance());
 
 int main(void)
 {
-    auto logger = std::make_shared<MyTools::ProxyLogger>(MyTools::FileLoggerSingleton::getInstance());
+    
     logger->OpenLogFile("log.txt");
 
-    SBomber game{logger};
+    //SBomber game{logger};
+    SBomber game;
 
     do {
         game.TimeStart();

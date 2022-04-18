@@ -146,6 +146,7 @@
     <ClCompile Include="MyTools.cpp" />
     <ClCompile Include="Plane.cpp" />
     <ClCompile Include="SBomber.cpp" />
+    <ClCompile Include="SBomber0.cpp" />
     <ClCompile Include="SBomberProject.cpp" />
     <ClCompile Include="Tank.cpp" />
   </ItemGroup>
