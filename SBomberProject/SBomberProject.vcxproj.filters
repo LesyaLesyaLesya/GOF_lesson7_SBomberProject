@@ -27,7 +27,7 @@
     <ClCompile Include="MyTools.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="SBomber.cpp">
+    <ClCompile Include="SBomber0.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="Bomb.cpp">
@@ -40,6 +40,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="House.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SBomber.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

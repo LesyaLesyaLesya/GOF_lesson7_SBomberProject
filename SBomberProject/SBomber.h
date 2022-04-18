@@ -1,8 +1,8 @@
-/*#pragma once
-
-#include <vector>
+#pragma once
 #include <memory>
 
+/*
+#include <vector>
 #include "LevelGUI.h"
 #include "Plane.h"
 #include "Bomb.h"
@@ -55,11 +55,23 @@ private:
     std::shared_ptr<MyTools::ILogger> logger_;
 };*/
 
-class MyClassImpl;
-© geekbrains.ru 12
-class MyClass {
+class SBomberImpl;
+
+class SBomber {
     // ...
-    void DoSth();
+public:
+    SBomber();
+    ~SBomber();
+
+    bool GetExitFlag() const; 
+
+    void ProcessKBHit();
+    void TimeStart();
+    void TimeFinish();
+
+    void DrawFrame();
+    void MoveObjects();
+    void CheckObjects();
 private:
-    MyClassImpl* m_pImpl;
+    std::unique_ptr<SBomberImpl>  m_pImpl;
 };
